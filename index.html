@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+      <title>yaşa göre arka plan</title>
+  </head>
+  <body id="ch" style= "width:100%;height:1000px;">
+      <form name="form" method="post">
+          <label>yaşınızı giriniz:</label>
+          <input type="number" id="year-old" name="year">
+      </form>
+      <input type="button" onclick="formInput();" value="Gonder">
+
+  </body>
+
+<script type="text/javascript">
+function formInput(){
+
+  var x = document.getElementById("year-old").value;
+    if (x <= 20) {
+      document.getElementById("ch").style.backgroundColor = "aqua";
+    }
+    else if (x > 20 && x < 30){
+      document.getElementById("ch").style.backgroundColor = "blue";
+    }
+    else if (x >= 30 && x < 45){
+      document.getElementById("ch").style.backgroundColor = "gray";
+    }
+    else if (x >= 45){
+      document.getElementById("ch").style.backgroundColor = "black";
+    }
+}
+</script>
+</html>
